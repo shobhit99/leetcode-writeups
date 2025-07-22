@@ -7,6 +7,8 @@ Points to remember
 
 # Remember Disjoint set is the KEYWORD here
 
+> Alternative solution is to do DFS, you would create two way adjacency list of the edges, and start with one node and pass the current node as third param to the recursive function so that we don't go back to the same node again and in each call we will put the current node in the visited set and if at any point we encounter the node as visited, i.e cycle is there, so we exist and return false
+
 ## Code
 ```python
 class Disjoint():
